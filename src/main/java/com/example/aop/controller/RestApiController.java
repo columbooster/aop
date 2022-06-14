@@ -16,5 +16,5 @@ public class RestApiController {
     public User post(@RequestBody User user){
         return user;
     }
-
+    // 사용방식 추가 예시 dev
 }
