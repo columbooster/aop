@@ -17,4 +17,6 @@ public class RestApiController {
         return user;
     }
     // 사용방식 추가 예시 dev
+    // custom 사용 예시 ex
+
 }
