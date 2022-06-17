@@ -1,5 +1,6 @@
 package com.example.aop.controller;
 
+import com.example.aop.annotation.Timer;
 import com.example.aop.dto.User;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,9 +17,13 @@ public class RestApiController {
     public User post(@RequestBody User user){
         return user;
     }
-    // 사용방식 추가 예시 dev
-    // custom 사용 예시 ex
-    // 예시 위주로 몇 번 더 돌려보자.
+
+    @Timer
+    @DeleteMapping("/delete")
+    public void delete() throws InterruptedException {
+        // db logic
+        Thread.sleep(1000*2);
+    }
 
 
 }
