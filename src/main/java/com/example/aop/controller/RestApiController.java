@@ -35,5 +35,5 @@ public class RestApiController {
 
         return user;
     }
-
+    // AOP 적용사례
 }
