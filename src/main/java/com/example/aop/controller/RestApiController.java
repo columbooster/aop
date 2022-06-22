@@ -36,4 +36,5 @@ public class RestApiController {
         return user;
     }
     // AOP 적용사례 이클립스에서 구현(어노테이션 없이)
+    //mvc 패턴 연습
 }
